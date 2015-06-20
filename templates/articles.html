@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="box">
+      <div class="col-lg-12">
+        <hr>
+        <h1 class="intro-text text-center">Sharp Cut's Educational Articles</h1>
+        <hr>
+        <?php
+          if($_SESSION['loggedIn'] && $_SESSION['username'] == 'jimj908'){
+            echo "<h5 class='text-center'><a href='add-article.php'>Add New Article</a></h5>";
+          }
+        ?>  
+      </div>
+      <br>
+    </div>
+  </div>
+  <?php echo $articles; ?>
+  <div class="row">
+    <div class="box">
+      <div class="col-lg-12 testimonial">
+        <h2>Coming Soon
+          <br>
+          <small>December 18, 2014</small>
+        </h2>
+        <div class="col-md-4">
+          <img class="img-responsive" src="../img/sprinkler-200.jpg" alt="Sharp Cut Test Article">
+        </div>
+        <div class="col-md-8">
+          <p>This is just a test article. Sharp Cut will begin uploading weekly articles to provide customers
+          and visitors with seasonal tips and advice for their landscape. We hope that this will help to educate
+          the local community, increasing awareness of their landscape features and seasonal actions that should
+          be taken. Many of the articles will provide Do It Yourself steps to complete these tasks around the house,
+          but of course Sharp Cut is here to do the work if you would prefer.</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
